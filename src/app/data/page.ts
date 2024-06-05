@@ -1,4 +1,4 @@
-export interface ChartData {
+interface ChartData {
     labels: string[];
     data: number[];
     colors: string[];
@@ -81,6 +81,5 @@ export const completedActivitiesData: Activity[] = [
 
 export const scheduledActivitiesData: Activity[] = [
     { id: 1, description: 'Load No. I-I-AAA-1325 will be delivered by Aman (Driver)' },
-    { id: 2, description: 'Aman (Driver) will Picked Up goods at Location_Name for Load No. I-I-AAA-1325' },
-    { id: 3, description: 'Load No. I-I-AAA-1325 will start added by Gurpreet Singh' }
+    { id: 2, description: 'Aman (Driver) will Picked Up goods at Location_Name for Load No. I-I-AAA-1325' }
 ];

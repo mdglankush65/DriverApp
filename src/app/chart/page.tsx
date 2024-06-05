@@ -6,12 +6,17 @@ import { Doughnut } from 'react-chartjs-2';
 Chart.register(ArcElement, Tooltip, Legend);
 
 interface ResType {
-    labels: string[],
-    colors: string[],
-    data: number[]
+    labels: string[];
+    colors: string[];
+    data: number[];
 }
 
-function DoughnutChart({res,title}:{ res: ResType, title:string }) {
+interface DoughnutChartProps {
+    res: ResType;
+    title: string;
+}
+
+const DoughnutChart: React.FC<DoughnutChartProps> = ({ res, title }) => {
     const chartData = {
         labels: res.labels,
         datasets: [
@@ -31,10 +36,10 @@ function DoughnutChart({res,title}:{ res: ResType, title:string }) {
 
     return (
         <Box sx={{ height: 180 }}>
-            <Typography variant="subtitle1" gutterBottom align="center" >
+            <Typography variant="subtitle1" gutterBottom align="center">
                 {title}
             </Typography>
-            < Doughnut data={chartData} options={chartOptions} />
+            <Doughnut data={chartData} options={chartOptions} />
         </Box>
     );
 }
