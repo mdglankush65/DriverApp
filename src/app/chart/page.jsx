@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { Chart, ArcElement, Tooltip, Legend } from 'chart.js';

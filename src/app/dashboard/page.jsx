@@ -1,3 +1,4 @@
+"use client";
 import QuickActions from '@/app/quickActions/page';
 import HighAlerts from '@/app/highAlerts/page';
 import DoughnutChart from '@/app/chart/page';
