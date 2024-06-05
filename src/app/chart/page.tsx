@@ -5,14 +5,20 @@ import { Doughnut } from 'react-chartjs-2';
 
 Chart.register(ArcElement, Tooltip, Legend);
 
-function DoughnutChart({ data, title }) {
+interface DataType {
+    labels: string[],
+    colors: string[],
+    data: number[]
+}
+
+function DoughnutChart({res,title}:{ res: DataType, title:string }) {
     const chartData = {
-        labels: data.labels,
+        labels: res.labels,
         datasets: [
             {
                 label: title,
-                data: data.data,
-                backgroundColor: data.colors,
+                data: res.data,
+                backgroundColor: res.colors,
                 hoverOffset: 4,
             },
         ],
