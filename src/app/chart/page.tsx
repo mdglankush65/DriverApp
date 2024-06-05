@@ -2,11 +2,16 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { Chart, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
-import { ChartData } from '@/app/data/page';
 
 Chart.register(ArcElement, Tooltip, Legend);
 
-function DoughnutChart({res,title}:{ res: ChartData, title:string }) {
+interface ResType {
+    labels: string[],
+    colors: string[],
+    data: number[]
+}
+
+function DoughnutChart({res,title}:{ res: ResType, title:string }) {
     const chartData = {
         labels: res.labels,
         datasets: [
