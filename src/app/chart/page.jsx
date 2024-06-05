@@ -12,8 +12,8 @@ const DoughnutChart = ({ res, title }) => {
         datasets: [
             {
                 label: title,
-                data: res.data,
-                backgroundColor: res.colors,
+                data: res?.data,
+                backgroundColor: res?.colors,
                 hoverOffset: 4,
             },
         ],

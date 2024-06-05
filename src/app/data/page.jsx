@@ -1,4 +1,3 @@
-"use client";
 export const highPriorityAlerts = [
     {
         title: 'Reefer Temp. out of range',
