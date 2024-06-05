@@ -6,11 +6,11 @@ const HighAlerts = ({ alerts }) => {
     return (
         <>
             <Typography variant="h6" gutterBottom>
-                High Priority Alerts ({alerts.length})
+                High Priority Alerts ({alerts?.length})
             </Typography>
             <Card className='border-0' >
                 <CardContent className='bg-blue-50 border-0 flex flex-row gap-1' >
-                    {alerts.map((alert, index) => (
+                    {alerts?.map((alert, index) => (
                         <div key={index} className='bg-white p-2 border border-gray-200 rounded-lg'>
                             <div>
                                 {alert.title}

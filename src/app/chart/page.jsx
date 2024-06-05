@@ -8,7 +8,7 @@ Chart.register(ArcElement, Tooltip, Legend);
 
 const DoughnutChart = ({ res, title }) => {
     const chartData = {
-        labels: res.labels,
+        labels: res?.labels,
         datasets: [
             {
                 label: title,
