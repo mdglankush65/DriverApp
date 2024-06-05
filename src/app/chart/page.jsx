@@ -5,18 +5,18 @@ import { Doughnut } from 'react-chartjs-2';
 
 Chart.register(ArcElement, Tooltip, Legend);
 
-interface ResType {
-    labels: string[];
-    colors: string[];
-    data: number[];
-}
+// interface ResType {
+//     labels: string[];
+//     colors: string[];
+//     data: number[];
+// }
 
-interface DoughnutChartProps {
-    res: ResType;
-    title: string;
-}
+// interface DoughnutChartProps {
+//     res: ResType;
+//     title: string;
+// }
 
-const DoughnutChart: React.FC<DoughnutChartProps> = ({ res, title }) => {
+const DoughnutChart = ({ res, title }) => {
     const chartData = {
         labels: res.labels,
         datasets: [
