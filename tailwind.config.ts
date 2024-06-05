@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      width:{
+        'nav':"5%",
+        'das':"60%",
+        'sdb':"35%"
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

@@ -76,13 +76,11 @@ export const todayHighlightsData: Highlight[] = [
 
 export const completedActivitiesData: Activity[] = [
     { id: 1, description: 'Gurpreet Singh (Dispatch team) has created Load No. 1-I-AAA-1325' },
-    { id: 2, description: 'Aman (Driver) Picked Up goods at Location_Name for Load No. I-I-AAA-1325' },
-    { id: 3, description: 'Gurpreet Singh (Dispatch team) has created Load No. 1-H-AAA-1325' },
+    { id: 2, description: 'Aman (Driver) Picked Up goods at Location_Name for Load No. I-I-AAA-1325' }
 ];
 
 export const scheduledActivitiesData: Activity[] = [
     { id: 1, description: 'Load No. I-I-AAA-1325 will be delivered by Aman (Driver)' },
     { id: 2, description: 'Aman (Driver) will Picked Up goods at Location_Name for Load No. I-I-AAA-1325' },
-    { id: 3, description: 'Load No. I-I-AAA-1325 will start added by Gurpreet Singh' },
-    { id: 4, description: 'Load No. I-I-AAA-1325 will start added by Gurpreet Singh' },
+    { id: 3, description: 'Load No. I-I-AAA-1325 will start added by Gurpreet Singh' }
 ];

@@ -17,7 +17,7 @@ function QuickActions() {
             </Typography>
             <Box sx={{ bgcolor: '#fff', p: 2, borderRadius: 2, mb: 2 }}>
                 <List className='flex flex-row justify-evenly '>
-                    <ListItem disablePadding >
+                    <ListItem disablePadding className=" border border-r-black border-white ">
                         <ListItemButton className='flex flex-col' >
                             <ListItemIcon>
                                 <PlaylistAddCircle />
@@ -25,7 +25,7 @@ function QuickActions() {
                             <ListItemText primary="create Indents" />
                         </ListItemButton>
                     </ListItem>
-                    <ListItem disablePadding>
+                    <ListItem disablePadding className=" border border-r-black border-white ">
                         <ListItemButton className='flex flex-col' >
                             <ListItemIcon>
                                 <FireTruckTwoTone />
@@ -33,7 +33,7 @@ function QuickActions() {
                             <ListItemText primary="Add Vehicle" />
                         </ListItemButton>
                     </ListItem>
-                    <ListItem disablePadding>
+                    <ListItem disablePadding className=" border border-r-black border-white ">
                         <ListItemButton className='flex flex-col' >
                             <ListItemIcon>
                                 <FireTruck />
@@ -41,7 +41,7 @@ function QuickActions() {
                             <ListItemText primary="Add Trailer" />
                         </ListItemButton>
                     </ListItem>
-                    <ListItem disablePadding>
+                    <ListItem disablePadding className=" border border-r-black border-white ">
                         <ListItemButton className='flex flex-col' >
                             <ListItemIcon>
                                 <PersonAddAlt />

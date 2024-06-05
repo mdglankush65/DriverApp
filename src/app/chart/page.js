@@ -24,7 +24,7 @@ function DoughnutChart({ data, title }) {
     };
 
     return (
-        <Box sx={{ height: 250 }}>
+        <Box sx={{ height: 180 }}>
             <Typography variant="subtitle1" gutterBottom align="center" >
                 {title}
             </Typography>

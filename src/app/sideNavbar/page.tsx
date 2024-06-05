@@ -8,9 +8,9 @@ import { DriveEta, Search, Dashboard, Add, Home, Computer, People } from '@mui/i
 
 const SideNavbar = () => {
     return (
-        <List className='bg-white min-w-10'>
+        <List className='bg-white max-w-7 h-full fixed '>
             <ListItem disablePadding>
-                <ListItemButton>
+                <ListItemButton className='py-6'>
                     <ListItemIcon>
                         <DriveEta />
                     </ListItemIcon>
@@ -18,7 +18,7 @@ const SideNavbar = () => {
                 </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
-                <ListItemButton>
+                <ListItemButton className='py-6'>
                     <ListItemIcon>
                         <Search />
                     </ListItemIcon>
@@ -26,7 +26,7 @@ const SideNavbar = () => {
                 </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
-                <ListItemButton>
+                <ListItemButton className='py-6'>
                     <ListItemIcon>
                         <Dashboard />
                     </ListItemIcon>
@@ -34,7 +34,7 @@ const SideNavbar = () => {
                 </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
-                <ListItemButton>
+                <ListItemButton className='py-6'>
                     <ListItemIcon>
                         <Add />
                     </ListItemIcon>
@@ -42,7 +42,7 @@ const SideNavbar = () => {
                 </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
-                <ListItemButton>
+                <ListItemButton className='py-6'>
                     <ListItemIcon>
                         <Home />
                     </ListItemIcon>
@@ -50,7 +50,7 @@ const SideNavbar = () => {
                 </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
-                <ListItemButton>
+                <ListItemButton className='py-6'>
                     <ListItemIcon>
                         <Computer />
                     </ListItemIcon>
@@ -58,7 +58,7 @@ const SideNavbar = () => {
                 </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
-                <ListItemButton>
+                <ListItemButton className='py-6'>
                     <ListItemIcon>
                         <People />
                     </ListItemIcon>
