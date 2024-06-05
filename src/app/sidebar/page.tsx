@@ -1,3 +1,4 @@
+"use client";
 import { Container, Typography, Grid, Box } from '@mui/material';
 import Activity from '@/app/activity/page';
 import { todayHighlightsData } from '@/app/data/page';
