@@ -1,7 +1,7 @@
 import { Typography, Box, Button } from '@mui/material';
 import { completedActivitiesData, scheduledActivitiesData } from '@/app/data/page';
 
-const Activity = ({ title }: any) => {
+const Activity = ({ title }) => {
     const data = title === "Completed Activities" ? completedActivitiesData : scheduledActivitiesData;
     return (
         <>

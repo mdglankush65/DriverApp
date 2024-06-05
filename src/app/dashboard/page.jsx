@@ -1,4 +1,3 @@
-import React from 'react';
 import QuickActions from '@/app/quickActions/page';
 import HighAlerts from '@/app/highAlerts/page';
 import DoughnutChart from '@/app/chart/page';
@@ -12,17 +11,17 @@ const Dashboard = () => {
                 Dashboard
             </Typography>
             {/* Chart Section */}
-            <Grid container spacing={2} className='mb-6'>
-                <Grid className='bg-white mr-1 rounded-lg border' sx={{ p: 1 }}>
+            <Grid className='flex mb-6 flex-row justify-between'>
+                <Grid className='bg-white mr-1 rounded-lg w-1/4 border' sx={{ p: 1 }}>
                     <DoughnutChart res={ordersData} title="Orders" />
                 </Grid>
-                <Grid className='bg-white mr-1 rounded-lg border' sx={{ p: 1 }}>
+                <Grid className='bg-white mr-1 rounded-lg w-1/4 border' sx={{ p: 1 }}>
                     <DoughnutChart res={tripsData} title="Trips" />
                 </Grid>
-                <Grid className='bg-white mr-1 rounded-lg border' sx={{ p: 1 }}>
+                <Grid className='bg-white mr-1 rounded-lg w-1/4 border' sx={{ p: 1 }}>
                     <DoughnutChart res={revenueData} title="Revenue" />
                 </Grid>
-                <Grid className='bg-white rounded-lg border' sx={{ p: 1 }}>
+                <Grid className='bg-white rounded-lg w-1/4 border' sx={{ p: 1 }}>
                     <DoughnutChart res={expensesData} title="Expenses" />
                 </Grid>
             </Grid>

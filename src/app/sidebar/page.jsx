@@ -5,10 +5,10 @@ import { todayHighlightsData } from '@/app/data/page';
 import { useEffect, useState } from 'react';
 
 const Sidebar = () => {
-    const [date, setDate] = useState<Date | null>(null);
+    const [date, setDate] = useState(null);
 
     useEffect(() => {
-        const today: Date = new Date();
+        const today = new Date();
         setDate(today);
     }, []);
 
@@ -45,4 +45,4 @@ const Sidebar = () => {
     );
 }
 
-export default Sidebar;
+export default Sidebar; 

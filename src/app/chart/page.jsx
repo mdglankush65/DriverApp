@@ -5,17 +5,6 @@ import { Doughnut } from 'react-chartjs-2';
 
 Chart.register(ArcElement, Tooltip, Legend);
 
-// interface ResType {
-//     labels: string[];
-//     colors: string[];
-//     data: number[];
-// }
-
-// interface DoughnutChartProps {
-//     res: ResType;
-//     title: string;
-// }
-
 const DoughnutChart = ({ res, title }) => {
     const chartData = {
         labels: res.labels,
@@ -35,7 +24,7 @@ const DoughnutChart = ({ res, title }) => {
     };
 
     return (
-        <Box sx={{ height: 180 }}>
+        <Box sx={{ height: 180 }} >
             <Typography variant="subtitle1" gutterBottom align="center">
                 {title}
             </Typography>
