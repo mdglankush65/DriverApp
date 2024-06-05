@@ -1,11 +1,7 @@
 import { Typography, Box, Button } from '@mui/material';
 import { completedActivitiesData, scheduledActivitiesData } from '@/app/data/page';
 
-interface ActivityProps {
-    title: string;
-}
-
-const Activity = ({ title }: ActivityProps) => {
+const Activity = ({ title }: any) => {
     const data = title === "Completed Activities" ? completedActivitiesData : scheduledActivitiesData;
     return (
         <>
