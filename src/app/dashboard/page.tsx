@@ -13,16 +13,16 @@ const Dashboard = () => {
             {/* Chart Section */}
             <Grid className='flex mb-6 flex-row justify-between'>
                 <Grid className='bg-white mr-1 rounded-lg w-1/4 border' sx={{ p: 1 }}>
-                    <DoughnutChart data={ordersData} title="Orders" />
+                    <DoughnutChart res={ordersData} title="Orders" />
                 </Grid>
                 <Grid className='bg-white mr-1 rounded-lg w-1/4 border' sx={{ p: 1 }}>
-                    <DoughnutChart data={tripsData} title="Trips" />
+                    <DoughnutChart res={tripsData} title="Trips" />
                 </Grid>
                 <Grid className='bg-white mr-1 rounded-lg w-1/4 border' sx={{ p: 1 }}>
-                    <DoughnutChart data={revenueData} title="Revenue" />
+                    <DoughnutChart res={revenueData} title="Revenue" />
                 </Grid>
                 <Grid className='bg-white rounded-lg w-1/4 border' sx={{ p: 1 }}>
-                    <DoughnutChart data={expensesData} title="Expenses" />
+                    <DoughnutChart res={expensesData} title="Expenses" />
                 </Grid>
             </Grid>
 
